@@ -30,5 +30,19 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-prismic-graphql',
+      options: {
+        repositoryName: 'netlify-gatsby-prismic-test', // (REQUIRED, replace with your own)
+        accessToken: 'MC5YZGF4NmhFQUFDRUFBS1ZR.Cu-_ve-_ve-_ve-_ve-_ve-_ve-_vQ0xfu-_ve-_vSTvv711Ie-_ve-_vV9NETnvv71977-977-9a--_ve-_ve-_vXM', // (optional API access token)
+        path: '/preview', // (optional preview path. Default: /preview)
+        previews: true, // (optional, activated Previews. Default: false)
+        // pages: [{ // (optional, builds pages dynamically)
+        // type: 'Article',         // TypeName from prismic
+        // match: '/article/:uid',  // Pages will be generated under this pattern
+        // path: '/article',        // Placeholder page for unpublished documents
+        // component: require.resolve('./src/templates/article.js'),
+      }
+    }
   ],
 }
