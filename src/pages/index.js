@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { RichText } from 'prismic-reactjs'
 
 export const query = graphql`
-  {
+  query HomeQuery {
     prismic {
       allHome_pages {
         edges {
