@@ -8,13 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
   return (
     <StaticQuery
       query={graphql`
-        query {
+        query HeadingQuery {
           site {
             siteMetadata {
               title
@@ -73,6 +73,7 @@ function SEO({ description, lang, meta, title }) {
         )
       }
     }
+    />
   )
   // const { site } = useStaticQuery(
   //   graphql`
