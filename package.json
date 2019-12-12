@@ -13,7 +13,7 @@
     "gatsby-plugin-sharp": "^2.3.7",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-source-prismic-graphql": "^3.4.0-beta.2",
-    "gatsby-transformer-sharp": "^2.3.3",
+    "gatsby-transformer-sharp": "^2.3.9",
     "prismic-reactjs": "^1.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
